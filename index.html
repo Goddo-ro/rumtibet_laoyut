@@ -21,6 +21,7 @@
                 <li class="menu__item">Стоимость</li>
                 <li class="menu__item">Блог</li>
                 <li class="menu__item">Контакты</li>
+                <li><a href="#" class="button menu__button">Консультация</a></li>
             </ul>
             <img id="header-toggle" class="menu__toggle-btn"
                  src="public/assets/icons/heroicons-solid_menu-alt-3.svg" alt="Open">
@@ -30,7 +31,32 @@
                 Насладись прогулкой в горы
                 с командой единомышленников
             </h1>
-            <button class="button button_outline">Найти программу</button>
+            <button class="header-bottom__button button button_outline">Найти программу</button>
+            <form class="find-program-form">
+                <div class="find-program-form__input-container">
+                    <select class="find-program-form__input" name="location">
+                        <option value="">Локация для тура</option>
+                        <option value="kon-kolodez">с.Конь-Колодезь</option>
+                    </select>
+                    <div class="find-program-form__sign">выберите из списка</div>
+                </div>
+                <div class="find-program-form__input-container">
+                    <input class="find-program-form__input" type="text"
+                           placeholder="Дата похода" onfocus="(this.type='date')">
+                    <div class="find-program-form__sign">укажите диапазон</div>
+                </div>
+                <div class="find-program-form__input-container">
+                    <select class="find-program-form__input" name="participants">
+                        <option value="">Участники</option>
+                        <option value="Kirill">Kirill</option>
+                    </select>
+                    <div class="find-program-form__sign">минимум 4 человека</div>
+                </div>
+                <div class="find-program-form__input-container">
+                    <button class="header-bottom__button button button_outline">Найти программу</button>
+                    <div class="find-program-form__sign_invisible">&nbsp;</div>
+                </div>
+            </form>
         </div>
     </div>
 </header>

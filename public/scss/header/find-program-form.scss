@@ -1,0 +1,96 @@
+@import "../vars";
+
+.find-program-form {
+  display: none;
+  background: rgba(255, 255, 255, .2);
+  padding: 40px 42px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 24px;
+  color: $white;
+
+  .find-program-form__input-container {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .find-program-form__input {
+    flex: 1 1;
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid $white;
+    background: transparent;
+    color: $white;
+    outline: none;
+    max-height: 52px;
+
+    option {
+      color: $dark;
+    }
+  }
+
+  .find-program-form__sign {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 8px;
+    padding-inline: 8px;
+  }
+
+  .find-program-form__sign_invisible {
+    visibility: hidden;
+  }
+
+  select.find-program-form__input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../assets/icons/ep_arrow-down.svg");
+    background-position: calc(100% - 16px);
+    background-size: 20px;
+    background-repeat: no-repeat;
+  }
+
+  input.find-program-form__input:not([type="date"]) {
+    background-image: url("../assets/icons/formkit_date.svg");
+    background-position: calc(100% - 16px);
+    background-size: 18px;
+    background-repeat: no-repeat;
+  }
+
+  input.find-program-form__input {
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      color: rgba(0, 0, 0, 0);
+      opacity: 1;
+      display: block;
+      padding: 0;
+      margin: 0;
+      background: url("../assets/icons/formkit_date.svg") no-repeat;
+      width: 18px;
+      height: 18px;
+      border-width: thin;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .header-bottom__button {
+    display: block;
+    padding: 16px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .find-program-form {
+    display: flex;
+  }
+}
