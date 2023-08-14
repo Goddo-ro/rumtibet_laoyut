@@ -1,0 +1,77 @@
+@import "../vars";
+
+.header {
+  background: url("../assets/images/header_background.png") center;
+  height: 100%;
+
+  .header__flex {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-top__logo {
+      height: 44px;
+      width: 84px;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $green;
+    margin: 0;
+    padding: 50px 0;
+    list-style: none;
+    color: $white;
+    flex-direction: column;
+    gap: 16px;
+    display: flex;
+    transform: translateX(-200%);
+    transition: .5s all ease;
+
+    .menu__close-btn {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+    }
+
+    .menu__item {
+      margin-inline: 16px;
+      margin-left: 22px;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      padding-left: 8px;
+      cursor: pointer;
+
+      &::marker {
+        content: url("../assets/icons/list-item-icon.svg");
+      }
+    }
+
+    .menu__item:hover,
+    .menu__item:focus,
+    .menu__item:active {
+      text-decoration: underline;
+      color: $yellow;
+
+      &::marker {
+        content: url("../assets/icons/list-item-icon-yellow.svg");
+      }
+    }
+  }
+
+  .header-bottom__title {
+    margin-bottom: 2rem;
+  }
+}
