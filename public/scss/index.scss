@@ -1,6 +1,7 @@
 @import "header/header";
 @import "about/about";
 @import "offers/offers";
+@import "popular-directions/popular-directions";
 
 @import "normalize";
 @import "button";
@@ -71,6 +72,11 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
 }
 
 @media screen and (min-width: $desktop-breakpoint) {

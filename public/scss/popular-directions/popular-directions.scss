@@ -1,0 +1,38 @@
+@import "../vars";
+
+.popular-directions__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .button {
+    margin-inline: auto;
+    width: fit-content;
+  }
+}
+
+.popular-directions-swiper {
+  margin-inline: auto;
+  height: fit-content !important;
+
+  .popular-directions-swiper__item {
+    border-radius: 32px;
+    max-width: 358.3px;
+    max-height: 500px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .popular-directions__flex {
+    gap: 50px;
+  }
+
+  .popular-directions-swiper {
+    width: 100%;
+    margin-inline: 0;
+  }
+}
