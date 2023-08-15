@@ -190,13 +190,36 @@
   .menu__toggle-btn {
     display: none;
   }
-  .header-bottom__title {
+  .header-bottom .header-bottom__title {
     margin-bottom: 42px;
   }
-  .header-bottom__button {
+  .header-bottom .header-bottom__phone-button {
     display: none;
   }
 }
+.about__button {
+  margin-inline: auto;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.video-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 600px;
+}
+.video-container .video-container__back-img {
+  display: none;
+  margin-inline: auto;
+}
+.video-container .video-container__video {
+  width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -514,6 +537,7 @@ template {
   border: 1px solid #1A3E3E;
   font-weight: 600;
   cursor: pointer;
+  display: block;
 }
 
 .button_outline {
@@ -548,6 +572,31 @@ html, body {
   font-size: 28px;
   font-weight: 700;
   line-height: 42px;
+}
+
+.h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.h4 {
+  color: #F2BE22;
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 a {

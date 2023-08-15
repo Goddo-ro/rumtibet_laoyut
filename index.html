@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8">
     <title>Румтибет</title>
+    <link rel="icon" href="public/assets/icons/logo.svg" type="image/icon type">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
@@ -31,7 +33,7 @@
                 Насладись прогулкой в горы
                 с командой единомышленников
             </h1>
-            <button class="header-bottom__button button button_outline">Найти программу</button>
+            <button class="header-bottom__phone-button header-bottom__button button button_outline">Найти программу</button>
             <form class="find-program-form">
                 <div class="find-program-form__input-container">
                     <select class="find-program-form__input" name="location">
@@ -60,6 +62,27 @@
         </div>
     </div>
 </header>
+<main>
+    <section class="about">
+        <div class="container">
+            <div>
+                <h4 class="h4">о нашем походе</h4>
+                <h2 class="h2">Исследуйте все горные массивы мира вместе с нами</h2>
+                <p>
+                    Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий
+                    назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
+                    самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской
+                    литературе.
+                </p>
+                <button class="about__button button">Программа тура</button>
+            </div>
+            <div class="video-container">
+                <img class="video-container__back-img" src="public/assets/images/video-back-image.png">
+                <video class="video-container__video" poster="public/assets/images/video.png"></video>
+            </div>
+        </div>
+    </section>
+</main>
 <script src="public/scripts/headerMenu.js"></script>
 </body>
 </html>

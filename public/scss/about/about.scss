@@ -1,0 +1,26 @@
+@import "../vars";
+
+.about__button {
+  margin-inline: auto;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.video-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 600px;
+
+  .video-container__back-img {
+    display: none;
+    margin-inline: auto;
+  }
+
+  .video-container__video {
+    width: 100%;
+  }
+}

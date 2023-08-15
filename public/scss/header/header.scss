@@ -133,11 +133,13 @@
     display: none;
   }
 
-  .header-bottom__title {
-    margin-bottom: 42px;
-  }
+  .header-bottom {
+    .header-bottom__title {
+      margin-bottom: 42px;
+    }
 
-  .header-bottom__button {
-    display: none;
+    .header-bottom__phone-button {
+      display: none;
+    }
   }
 }
