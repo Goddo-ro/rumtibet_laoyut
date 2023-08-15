@@ -1,5 +1,6 @@
 @import "header/header";
 @import "about/about";
+@import "offers/offers";
 
 @import "normalize";
 @import "button";
@@ -9,6 +10,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 html, body{
@@ -23,6 +26,12 @@ html, body{
   padding: 50px 16px;
 }
 
+.content-title {
+  .h2 {
+    margin-top: 8px;
+  }
+}
+
 .h1 {
   color: $white;
   font-size: 28px;
@@ -35,13 +44,18 @@ html, body{
   font-style: normal;
   font-weight: 800;
   line-height: 120%;
-  margin-bottom: 24px;
-  margin-top: 8px;
+}
+
+.h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111%;
+  letter-spacing: .216px;
 }
 
 .h4 {
   color: $yellow;
-  margin: 0;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -69,7 +83,6 @@ a {
 
   .h2 {
     font-size: 32px;
-    margin-bottom: 40px;
   }
 
   .h4 {
