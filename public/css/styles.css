@@ -345,10 +345,64 @@
   max-width: 358.3px;
   max-height: 500px;
 }
-.popular-directions-swiper .popular-directions-swiper__item img {
+.popular-directions-swiper .popular-directions-swiper__img {
   width: 100%;
+  display: block;
+  border-radius: 32px;
+}
+.popular-directions-swiper .popular-directions-swiper__rate {
+  position: absolute;
+  top: 36.8px;
+  right: 0;
+  width: 60px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #1A3E3E;
+  text-align: right;
+  padding: 6px 10px;
+  border-radius: 4px 0px 0px 4px;
+  background-color: rgba(253, 253, 253, 0.4);
+  background-image: url("../assets/icons/ic_round-star.svg");
+  background-repeat: no-repeat;
+  background-position: left 6px center;
+  backdrop-filter: blur(2px);
+}
+.popular-directions-swiper .popular-directions-swiper__bottom {
+  position: absolute;
+  height: fit-content;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 32px 32px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #FFF;
+}
+.popular-directions-swiper .popular-directions-swiper__title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.popular-directions-swiper .popular-directions-swiper__price {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  width: fit-content;
 }
 
+@media screen and (min-width: 420px) {
+  .popular-directions-swiper .popular-directions-swiper__bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .popular-directions__flex {
     gap: 50px;

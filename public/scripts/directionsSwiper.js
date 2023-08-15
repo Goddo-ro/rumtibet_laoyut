@@ -7,12 +7,11 @@
     height: 400,
   });
 
-  if (window.innerWidth >= 1024) swiper.disable();
+  if (window.innerWidth >= 1200) swiper.disable();
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1024) {
+    if (window.innerWidth >= 1200) {
       swiper.disable();
-      console.log('hi');
     } else {
       swiper.enable();
     }
