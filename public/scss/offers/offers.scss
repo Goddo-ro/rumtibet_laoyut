@@ -6,6 +6,7 @@
 
 .offers__flex {
   display: flex;
+  align-items: center;
   gap: 90px;
 }
 
@@ -13,6 +14,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  .button {
+    margin-inline: auto;
+  }
 }
 
 .offers-list {
@@ -43,4 +48,23 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   display: none;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .offers__images {
+    display: grid;
+  }
+
+  .offers__text {
+    gap: 40px;
+
+    .button {
+      margin-inline: 0;
+      width: fit-content;
+    }
+  }
+
+  .offers-list {
+    gap: 40px;
+  }
 }
