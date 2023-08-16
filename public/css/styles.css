@@ -413,6 +413,8 @@
 .popular-directions-swiper .popular-directions-swiper__bottom-top {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  gap: 4px;
   justify-content: space-between;
 }
 .popular-directions-swiper .popular-directions-swiper__title {
