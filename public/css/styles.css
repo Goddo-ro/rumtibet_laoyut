@@ -453,6 +453,107 @@
     margin-inline: 0;
   }
 }
+.blog {
+  background: #F3F5F4;
+}
+.blog .blog__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.blog .blog__flex .button {
+  margin-inline: auto;
+}
+
+.blog-swiper {
+  height: 550px !important;
+}
+.blog-swiper .blog-swiper__item {
+  background: #FFF;
+  border-radius: 10px;
+  max-width: 358.3px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-swiper .blog-swiper__image {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-swiper .blog-swiper__text {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  height: 50%;
+}
+.blog-swiper .blog-swiper__text p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.blog-swiper .blog-swiper__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 138%;
+}
+.blog-swiper .blog-swiper__text-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.blog-swiper .blog-swiper__date,
+.blog-swiper .blog-swiper__link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 143%;
+}
+.blog-swiper .blog-swiper__date {
+  color: #F2BE22;
+}
+.blog-swiper .blog-swiper__link {
+  color: #1A3E3E;
+}
+
+@media screen and (min-width: 1024px) {
+  .blog .blog__flex {
+    gap: 56px;
+  }
+  .blog-swiper {
+    height: fit-content !important;
+  }
+  .blog-swiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+  .blog-swiper .blog-swiper__item {
+    height: 312px;
+    max-width: unset;
+    flex-direction: row;
+    padding: 16px;
+    margin: 0 !important;
+    border-radius: 10px;
+  }
+  .blog-swiper .blog-swiper__image {
+    width: 40%;
+    height: 100%;
+    border-radius: 6px;
+  }
+  .blog-swiper .blog-swiper__text:hover .blog-swiper__title,
+  .blog-swiper .blog-swiper__text:focus .blog-swiper__title {
+    color: #1A3E3E;
+    text-decoration: underline;
+  }
+  .blog-swiper .blog-swiper__text {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -771,6 +872,7 @@ template {
   font-weight: 600;
   cursor: pointer;
   display: block;
+  width: fit-content;
 }
 
 .button_outline {
