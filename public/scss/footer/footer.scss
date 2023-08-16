@@ -1,0 +1,130 @@
+@import "../vars";
+
+.footer {
+  color: $white;
+
+  .footer > * {
+    width: 100%;
+  }
+
+  .footer__green-container {
+    background: $green;
+  }
+
+  .footer__dark-container {
+    background: $dark;
+
+    .container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      * {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+      }
+
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  .footer__contacts {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    a {
+      color: $white;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 128.5%;
+      text-decoration: underline;
+      margin-right: 24px;
+      display: inline-block;
+    }
+  }
+
+  .footer__social {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer__list-item {
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    padding-left: 8px;
+    cursor: pointer;
+    width: fit-content;
+
+    a {
+      color: $white;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      color: $yellow;
+    }
+
+    &::marker {
+      content: url("../assets/icons/list-item-icon.svg");
+    }
+  }
+
+  .footer__list-item:hover,
+  .footer__list-item:focus,
+  .footer__list-item:active {
+    &::marker {
+      content: url("../assets/icons/list-item-icon-yellow.svg");
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .footer {
+    .footer__flex {
+      flex-direction: row;
+      gap: 46px;
+      justify-content: space-between;
+    }
+
+    .footer__about-container {
+      width: 40%;
+    }
+
+    .footer__dark-container {
+      .container {
+        padding-inline: 32px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -689,6 +689,109 @@
     max-width: unset;
   }
 }
+.footer {
+  color: #FFF;
+}
+.footer .footer > * {
+  width: 100%;
+}
+.footer .footer__green-container {
+  background: #1A3E3E;
+}
+.footer .footer__dark-container {
+  background: #18121E;
+}
+.footer .footer__dark-container .container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.footer .footer__dark-container .container * {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.footer .footer__dark-container .container a {
+  color: #FFF;
+  text-decoration: underline;
+}
+.footer .footer__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.footer .footer__contacts {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer .footer__contacts a {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 128.5%;
+  text-decoration: underline;
+  margin-right: 24px;
+  display: inline-block;
+}
+.footer .footer__social {
+  display: flex;
+  gap: 16px;
+}
+.footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .footer__list-item {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-left: 8px;
+  cursor: pointer;
+  width: fit-content;
+}
+.footer .footer__list-item a {
+  color: #FFF;
+}
+.footer .footer__list-item a:hover,
+.footer .footer__list-item a:focus {
+  text-decoration: underline;
+  color: #F2BE22;
+}
+.footer .footer__list-item::marker {
+  content: url("../assets/icons/list-item-icon.svg");
+}
+.footer .footer__list-item:hover::marker,
+.footer .footer__list-item:focus::marker,
+.footer .footer__list-item:active::marker {
+  content: url("../assets/icons/list-item-icon-yellow.svg");
+}
+
+@media screen and (min-width: 1024px) {
+  .footer .footer__flex {
+    flex-direction: row;
+    gap: 46px;
+    justify-content: space-between;
+  }
+  .footer .footer__about-container {
+    width: 40%;
+  }
+  .footer .footer__dark-container .container {
+    padding-inline: 32px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
