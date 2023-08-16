@@ -1,11 +1,13 @@
 @import "../vars";
 
+@import "mailing-form";
+
 .photo__flex {
   display: flex;
   flex-direction: column;
   gap: 32px;
 
-  .button {
+  .photo__section-btn {
     margin-inline: auto;
   }
 }
