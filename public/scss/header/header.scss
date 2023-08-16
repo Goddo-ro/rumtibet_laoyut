@@ -56,6 +56,18 @@
     font-weight: 400;
     padding-left: 8px;
     cursor: pointer;
+    width: fit-content;
+
+    a {
+      color: $white;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      color: $yellow;
+    }
+
 
     &::marker {
       content: url("../assets/icons/list-item-icon.svg");
@@ -65,9 +77,6 @@
   .menu__item:hover,
   .menu__item:focus,
   .menu__item:active {
-    text-decoration: underline;
-    color: $yellow;
-
     &::marker {
       content: url("../assets/icons/list-item-icon-yellow.svg");
     }

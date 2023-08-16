@@ -130,15 +130,18 @@
   font-weight: 400;
   padding-left: 8px;
   cursor: pointer;
+  width: fit-content;
+}
+.menu .menu__item a {
+  color: #FFF;
+}
+.menu .menu__item a:hover,
+.menu .menu__item a:focus {
+  text-decoration: underline;
+  color: #F2BE22;
 }
 .menu .menu__item::marker {
   content: url("../assets/icons/list-item-icon.svg");
-}
-.menu .menu__item:hover,
-.menu .menu__item:focus,
-.menu .menu__item:active {
-  text-decoration: underline;
-  color: #F2BE22;
 }
 .menu .menu__item:hover::marker,
 .menu .menu__item:focus::marker,
