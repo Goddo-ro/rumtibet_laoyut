@@ -21,6 +21,36 @@
     max-height: 500px;
   }
 
+  .popular-directions-swiper__item:hover,
+  .popular-directions-swiper__item:focus {
+    .popular-directions-swiper__bottom {
+      height: 100%;
+      border-radius: 32px;
+    }
+
+    .popular-directions-swiper__bottom-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      .button {
+        margin-inline: 0;
+      }
+    }
+
+    .popular-directions-swiper__rate {
+      display: none;
+    }
+  }
+
   .popular-directions-swiper__img {
     width: 100%;
     display: block;
@@ -58,8 +88,14 @@
     padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 38px;
     color: $white;
+  }
+
+  .popular-directions-swiper__bottom-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .popular-directions-swiper__title {
@@ -68,17 +104,28 @@
     font-weight: 700;
   }
 
+  .popular-directions-swiper__paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 128.5%;
+    display: none;
+  }
+
   .popular-directions-swiper__price {
     padding: 8px 12px;
     border-radius: 4px;
     background: rgba(255, 255, 255, .3);
     width: fit-content;
   }
+
+  .popular-directions-swiper__bottom-bottom {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 420px) {
   .popular-directions-swiper {
-    .popular-directions-swiper__bottom {
+    .popular-directions-swiper__bottom-top {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
