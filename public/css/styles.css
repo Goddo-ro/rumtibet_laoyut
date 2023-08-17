@@ -615,6 +615,8 @@
   .mailing-form {
     padding: 40px 100px;
     margin-top: 0;
+    position: absolute;
+    bottom: 0;
     transform: translateY(50%);
     flex-direction: row;
     justify-content: center;
@@ -671,8 +673,10 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .photo__flex {
+  .photo .photo__flex {
     gap: 40px;
+    position: relative;
+    padding-bottom: 200px;
   }
   .photo-swiper .swiper-wrapper {
     display: grid;
@@ -785,6 +789,9 @@
     flex-direction: row;
     gap: 46px;
     justify-content: space-between;
+  }
+  .footer .footer__green-container {
+    padding-top: 100px;
   }
   .footer .footer__about-container {
     width: 40%;

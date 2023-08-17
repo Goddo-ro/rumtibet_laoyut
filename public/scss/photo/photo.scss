@@ -22,8 +22,12 @@
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
-  .photo__flex {
-    gap: 40px;
+  .photo {
+    .photo__flex {
+      gap: 40px;
+      position: relative;
+      padding-bottom: 200px;
+    }
   }
 
   .photo-swiper {
